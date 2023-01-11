@@ -1,38 +1,119 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Kenny Berry</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Cursive / Header/Titles -->
+  <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+  <!-- MainBody Font -->
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 
-  </head>
-  <body class=''>
-    <div class="jumbotron jumbotron-fluid text-light bg-secondary">
-      <div class="container">
-        <h1 class="display-4">Kenny Berry</h1>
-        <p class="lead">A New Front-End Developer</p>
+  <link rel="stylesheet" type="text/css" href="css\normalize.css">
+  <link rel="stylesheet" type="text/css" href="css\cs-min.css">
+  <!--Social Media Icon Libray! -->
+  <title>Toe Beans R Us</title>
+</head>
+  <body id='top'>
+    <!-- Nav Bar!  -->
+    <nav class="navbar backbluer navbar-expand-lg navbar-light fixed-top">
+      <a class="navbar-brand fancyscript" href="#">ToeBeans R Us</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="#top">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link aboutButton" href="#about">About</a>
+          <a class="nav-item nav-link contactButton" href="#contact">Contact Me</a>
+          <a class="nav-item nav-link" href="https://random.cat" target="_blank">Random Cats</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="mainBody">
+      <!-- JumboTron Alert/Welcome Mat  -->
+      <div class="jumbotron jumbotron-fluid backblue mb-0">
+        <div class="container">
+          <h1 class="display-4 fancyscript">ToeBeans R Us</h1>
+          <p class="lead pb-0">A codeLouisville Project</p>
+        </div>
+      </div>
+
+      <!-- 1-2-3 column layout utilizing bootstrap -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 col-lg-4 backbluer p-3">
+            <h3>Neat Fact</h3>
+            <p>They Have Glands Behind Their Toe Beans. Behind the toe beans of every cat are glands. These glands secrete an oil that has a scent only detectable by cats.</p>
+          </div>
+          <div class="col-md-6 col-lg-4 backblue p-3">
+            <h3>Survival</h3>
+            <p>ToeBeans are actually important for a cats survival. They act as a shock absorber for your feline friends allowing them to jump from high places safely. They also store the claw, and act as insulation.</p>
+          </div>
+          <div class="col-md-12 col-lg-4 backbluer p-3">
+            <h3>Define?</h3>
+            <p>The pink squishy pads on the underside of an animal's paws, particularly a cat's - so named for their resemblance to jelly beans.</p>
+            <!-- This Definition was pulled from UrbanDictionary.com -->
+          </div>
+          <div class="col-md-12 backblue py-4 justify-content-around">
+            <img class ="cat"  alt="Toebeans for Jolene" src="img/TB1.jpg">
+            <img class ="cat"  alt="Plasma ToeBeans" src="img/TB2.jpg">
+            <img class ="cat"  alt="Flattened Toebeans" src="img/TB3.jpg">
+            <img class ="cat"  alt="Regular ToeBeans" src="img/TB4.jpg">
+            <img class ="cat"  alt="Sleepy ToeBeans" src="img/TB5.jpg">
+            <img class ="cat"  alt="ToeBean Bear" src="img/TB6.png">
+          </div>
+        </div>
       </div>
     </div>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col bg-dark text-light">
-          <p>Hello World!</p>
+
+
+    <div class="secondary-content">
+      <div class="backbluer flex-cats">
+        <p class="pokeQuestion">Find out What Pokemon You Are - Click the Pokeball!</p>
+        <div class='pokeHider'>
+          <table align="center">
+            <th colspan="2" class="pokeResults">Enter your DOB Below</th>
+              <tr><td>Enter Month</td><td><input type="text" label="Enter Month" class="pokeMonth" value="8"></td></tr>
+              <tr><td>Enter Day</td><td><input type="text" class="pokeDay" value="31" ></td></tr>
+              <tr><td>Enter Year</td><td><input type="text" class="pokeYear" value="91" ></td></tr>
+              <tr>
+                <th colspan="2">
+                  <button onClick="pokeQuiz()" class="pokeSubmit" type="submit"></button>
+                </th>
+              </tr>
+          </table>
         </div>
-        <div class="col bg-light">
-          2 of 2
+        <div class="pokeKazam">
+          <button class="pokeReveal" type="submit"></button>
         </div>
       </div>
-      <div class="row">
-        <div class="col bg-warning">
-          1 of 3
-        </div>
-        <div class="col bg-primary">
-          2 of 3
-        </div>
-        <div class="col bg-warning">
-          3 of 3
-        </div>
+      <div class="col-md-12 backblue aboutMe p-3" id="about">
+        <h3>About Me</h3>
+        <p class='mb-2'>Hello! My name is Kenny. This is my #codeLouisville submission for March 2019. This is to showcase the use of CSS/HTML and javaScript in a front-end development role.</p>
+        <p class='mb-0'>I am still new and learning the best ways to code in HTML/CSS/JavaScript and welcome any tips!</p>
       </div>
+      <div class="contactMeHere backbluer p-3" id="contact">
+        <p class="p-0 m-0">Contact Me!</p>
+        <p p-auto>You can reach me at any of the following places.</p>
+        <a class="fa fa-facebook social" href="https://www.facebook.com/kenneth.isnt" target="_blank"></a>
+        <a class="fa fa-tumblr social"href="https://codelou-kenny.tumblr.com" target="_blank"></a>
+        <a class="fa fa-instagram social"href="https://instagram.com/kennyisnt" target="_blank"></a>
+      </div>
+
     </div>
+    <hr/>
+    <footer>
+      <div class="dasfooter">
+        <p>&copy ToeBeans! - Thank You For Visiting // <a href="#top">Return to Top</a></p>
+      </div>
+    </footer>
+    <!-- LOAD JQUERY -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.0.min.js"
+      integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4="
+      crossorigin="anonymous"></script>
+    <script src="js/js-min.js"></script>
   </body>
 </html>
